@@ -9,6 +9,7 @@ body {
   background-color: #f8f9fa;
   color: #212529;
   line-height: 1.6;
+  font-size: 18px; /* tamaño base cómodo para desktop */
 }
 
 /* Navegación */
@@ -136,19 +137,46 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .section {
-    margin: 1rem;
-    padding: 1rem;
+  body {
+    font-size: 16px; /* tamaño cómodo para móvil */
   }
 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar h1 {
+    font-size: 1rem;
   }
 
   .navbar ul {
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 0.5rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .navbar ul li {
+    padding: 0.5rem 0;
+  }
+
+  .section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .proyecto h3 {
+    font-size: 1rem;
+  }
+
+  .proyecto img {
+    height: 150px;
   }
 }
